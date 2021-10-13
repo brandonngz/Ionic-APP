@@ -1,13 +1,14 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
 	
 	<div id="container">
-		<img src="\assets\usuario.png" alt="" class="background" height="110px" width="110px">
+		<img src="\assets\Img\usuario.png" alt="userLoginImage" class="background" >
 		<div id="subcontainer">
-			<ion-label>Usuario:</ion-label>
-			<ion-input type="text" id="inputs" clearInput></ion-input>
-			<ion-label>Contraseña:</ion-label>
-			<ion-input type="password" id="inputs" clearInput></ion-input>
-			<ion-button>Iniciar sesión</ion-button>
+			<ion-label>Usuario</ion-label>
+			<ion-input type="text" class="inputs" [(ngModel)]="userLogin" clearInput></ion-input>
+			<ion-label>Contraseña</ion-label>
+			<ion-input type="password" class="inputs" [(ngModel)]="userLoginPassword" clearInput></ion-input>
+			<ion-label> {{userLoginMessage}}</ion-label>
+			<ion-button type="submit" (click)="validateUser()">Iniciar sesión</ion-button>
 		</div>
 	</div>
 </ion-content>

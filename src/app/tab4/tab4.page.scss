@@ -1,0 +1,107 @@
+.nav{
+  background-color: #EDEDED;
+  width: auto;
+  height: 30px;
+  box-shadow: 0 0 16px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ion-label{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.background{
+  background-color: #EDEDED;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.ArticleContainer{
+  background-color: #EDEDED;
+  position:relative;
+  // box-shadow: 0 0 10px black;
+  margin-top: 5px;
+
+
+  width: auto;
+  height: 200px;
+
+}
+.Article{
+  background-color: #548CA8;
+  padding: 10px;
+  position: relative;
+  width: auto;
+  height: 190px;
+  box-shadow: 0 0 3px black;
+  border-radius:  3px;
+}
+
+.ArticleImg{
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.Article .img{
+  width: 160px;
+  height: 160px;
+  
+  border-radius: 10px;
+ 
+}
+
+.description{
+ 
+  position: absolute;
+  left: 190px;
+  width: auto;
+  height: 170px;
+  
+  padding: 10px;
+  
+}
+
+.Article h5{
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+}
+.Article ion-button{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  --color: black;
+  font-weight: bold;
+}
+.details{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+
+  width: 25px;
+  height: 25px;
+}
+.stock{
+  position: absolute;
+  right: 10px;
+  top: 15px;
+
+  width: 15px;
+  height: 15px;
+}
+
+ion-item{
+  position: absolute;
+  top: 0px;
+
+  width: 180px;
+  height: 60px;
+  border-radius: 10px;
+
+
+  background-color: white;
+  font-weight: bold;
+}

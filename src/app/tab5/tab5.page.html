@@ -1,9 +1,24 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Gadgets</ion-title>
+<ion-header no-border>
+  <ion-toolbar >
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title size="medium">Opciones</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="datos">
 
+    <ion-label>Usuario: </ion-label>
+    <ion-label>user</ion-label><br><br>
+    <ion-label>Email: </ion-label>
+    <ion-label>user@gmail.com</ion-label>
+  </div>
+
+  <ion-grid class="grid">
+    <ion-button (click)="logOut()">Cerrar Sesión</ion-button>
+  </ion-grid>
 </ion-content>

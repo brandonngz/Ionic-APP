@@ -36,11 +36,7 @@
 	box-shadow: 0 0 2px black;
 }
 
-#inputs{
-	background-color: white;
-	border-radius: 10px;
-	margin-bottom: 	10px;
-}
+
 //=============================================================
 div ion-label{
 	display: block;
@@ -60,9 +56,21 @@ ion-button{
 //=============================================================
 .background{
   background-color: white;
-  height: 100px;
-  width: 100px;
+  height: 90px; 
+  width:90px;
   border-radius: 100px;
   margin-bottom: 10px;
   
 }
+
+.inputs{
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 	10px;
+  text-align: center;
+}
+// ion-content.backgroundImage{
+//   --background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-1596724882.jpg?crop=1xw:0.8888888888888888xh;center,top&resize=980:*) 0 0/100% 100% no-repeat;
+//   width: 412px;
+//   height: 915px;
+// }

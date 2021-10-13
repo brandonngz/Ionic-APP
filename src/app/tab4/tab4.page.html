@@ -1,17 +1,94 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Computadoras
-    </ion-title>
+
+<ion-header no-border>
+  <ion-toolbar >
+    
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-searchbar placeholder="Buscar articulos"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-tab-button tab="tab5" >
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="">
+          <ion-icon name="cart-outline"></ion-icon>
+        </ion-tab-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <nav class="nav">
+      <ion-label>Computadoras</ion-label>
+  </nav>
+  
+  <ion-grid  class="background">
+      
+          <ion-grid class="ArticleContainer">
+          <div class="Article">
+              <div class="ArticleImg">
+                  <img src="\assets\imgCo\laptopAsu.jpg" alt="laptopAsu" class="img">
+                  <ion-fab-button class="details">+</ion-fab-button>
+              </div>
+              <div class="description">
+                  <ion-item lines="none">Laptop Asus ROG</ion-item>    
+                  <h5>$31,900.00</h5>
+                  <ion-button size="default" attribute="strong" >Comprar</ion-button>       
+              </div>
+          </div>
+          <ion-fab-button class="stock" color="success"></ion-fab-button>
+          </ion-grid>
+  </ion-grid>
+  
+  <ion-grid  class="background">
+          <ion-grid class="ArticleContainer">
+          <div class="Article">
+              <div class="ArticleImg">
+                  <img src="assets\imgCo\hp.jpg" alt="hp" class="img">
+                  <ion-fab-button class="details">+</ion-fab-button>
+              </div>
+              <div class="description">
+                  <ion-item lines="none">Laptop HP Omen</ion-item>    
+                  <h5>$18,999.00</h5>
+                  <ion-button size="default" attribute="strong" >Comprar</ion-button>       
+              </div>
+          </div>
+          <ion-fab-button class="stock" color="warning"></ion-fab-button>
+          </ion-grid>
+  </ion-grid>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large"></ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid  class="background">
+          <ion-grid class="ArticleContainer">
+          <div class="Article">
+              <div class="ArticleImg">
+                  <img src="\assets\imgCo\msi.jpg" alt="msi" class="img">
+                  <ion-fab-button class="details">+</ion-fab-button>
+              </div>
+              <div class="description">
+                  <ion-item lines="none">Laptop Asus Zephyrus</ion-item>    
+                  <h5>$27,999.00</h5>
+                  <ion-button size="default" attribute="strong" >Comprar</ion-button>       
+              </div>
+          </div>
+          <ion-fab-button class="stock" color="danger"></ion-fab-button>
+          </ion-grid>
+  </ion-grid>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-grid  class="background">
+      <ion-grid class="ArticleContainer">
+      <div class="Article">
+          <div class="ArticleImg">
+              <img src="\assets\imgCo\acer.jpg" alt="acer" class="img">
+              <ion-fab-button class="details">+</ion-fab-button>
+          </div>
+          <div class="description">
+              <ion-item lines="none">Laptop Acer A515</ion-item>    
+              <h5>$8,999.00</h5>
+              <ion-button size="default" attribute="strong" >Comprar</ion-button>       
+          </div>
+      </div>
+      <ion-fab-button class="stock" color="success"></ion-fab-button>
+      </ion-grid>
+</ion-grid>
+
 </ion-content>

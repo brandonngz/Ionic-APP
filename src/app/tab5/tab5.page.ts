@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab5',
@@ -9,12 +9,17 @@ import { } from '@angular/core';
 export class Tab5Page implements OnInit {
 
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
 
-  
+  logOut()  {
+
+    window.localStorage.setItem('logIn','');
+    this.router.navigate(['login']);
+
+  }
 
 
 }

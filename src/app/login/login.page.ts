@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginPage implements OnInit {
   userLoginPassword:string;
   userLoginMessage:string;
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
@@ -23,7 +24,10 @@ export class LoginPage implements OnInit {
 
         this.userLogin = "";
         this.userLoginPassword = "";
-        this.userLoginMessage = "You are in";
+        this.userLoginMessage = "";
+
+        window.localStorage.setItem('logIn','In');
+        this.router.navigate(['']);
         
       } else  {
         this.userLoginPassword = "";
