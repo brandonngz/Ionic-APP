@@ -8,35 +8,33 @@ import { Router } from '@angular/router';
 })
 export class LoginPage implements OnInit {
 
-  userLogin:string;
-  userLoginPassword:string;
-  userLoginMessage:string;
+  userLogin: string;
+  userLoginPassword: string;
+  userLoginMessage: string;
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
-  
   validateUser()  {
-    if(this.userLogin === "Brandon"){
+    if(this.userLogin === 'Brandon' || this.userLogin === 'Brayan'){
 
-      if(this.userLoginPassword === "123")  {
+      if(this.userLoginPassword === '123')  {
 
-        this.userLogin = "";
-        this.userLoginPassword = "";
-        this.userLoginMessage = "";
+        this.userLogin = '';
+        this.userLoginPassword = '';
+        this.userLoginMessage = '';
 
         window.localStorage.setItem('logIn','In');
         this.router.navigate(['']);
-        
       } else  {
-        this.userLoginPassword = "";
-        this.userLoginMessage = "Contraseña incorrecta.";
+        this.userLoginPassword = '';
+        this.userLoginMessage = 'Contraseña incorrecta.';
 
       }
     } else {
-      this.userLogin = "";
-      this.userLoginMessage = "Usuario Desconocido";
+      this.userLogin = '';
+      this.userLoginMessage = 'Usuario Desconocido';
     }
 
   }
